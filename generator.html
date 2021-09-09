@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+   
+</head>
+<body>
+   <script>
+       fucntion createNames(){
+           yield "zki";
+           yield "mah";
+           yield "fudz";
+       }
+       const names = createNames();
+       for(const name of names){
+           console.info(name);
+       }
+       console.info(names[0]);
+
+       fucntion* Buatganjil(value){
+           for (let i = 1; i<= value; i++){
+               if(i % 2 === 1){
+                   yield i;
+               }
+           }
+       }
+       const numbers =Buatganjil(100);
+       for(const number of numbers) {
+           console.info(number);
+       }
+   </script> 
+</body>
+</html>

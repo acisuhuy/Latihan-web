@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>switch</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script >
+        const nilai ="B";
+        switch (nilai) {
+            case "A":
+                document.writeln("<p>Wow anda lulus dengan baik</p>");
+                break;
+            case "B":
+            case "C":
+                document.writeln("<p> Anda Lulus</p>");
+                break;
+            case "D":
+                document.writeln("<p> Anda Tidak Lulus</p>");
+                break;
+            default:
+                document.writeln("<p>Mungkin anda Salah jurusan</p>");        
+        }
+        //TIPE B
+        if (nilai === "A"){
+            document.writeln("<p>Wow Anda Lulus Dengan baik</p>");
+        }else if (nilai === "B" || nilai === "C"){
+            document.writeln("<p>Anda lulus</p>");
+        }else if(nilai === "D"){
+            document.writeln("Anda Tidak Lulus");
+        }else{
+            document.writeln("<p>Mungkin anda Salah jurusan</p>");  
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
